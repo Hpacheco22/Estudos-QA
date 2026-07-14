@@ -16,9 +16,9 @@ CT002.
 **Titulo:** teste de login com credenciais inválidas.  
 **passos:** 
 1. entrar no site
-2. digitar usuário errado "standard_user " no campo de usuário
-3. digitar senha inválida  "secret_sauce" no campo de senha
-4. clicar em login .
+2. digitar usuário errado "usuário_errado" no campo de usuário
+3. digitar senha inválida  "senha_errada" no campo de senha
+4. clicar em login
 
  **resultado esperado:** receber a mensagem informando que login e senha estão errados e permanecer na pagina em questão
  
