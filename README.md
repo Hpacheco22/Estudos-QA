@@ -40,4 +40,62 @@ CT003
 
 
 
+## Scripts Python
 
+```python
+
+
+bug = {
+    "titulo": "Checkout finaliza sem solicitar forma de pagamento",
+    "passos": [
+        "Acessar saucedemo.com fazer login",
+        "Adicionar produto ao carrinho",
+        "Preencher nome, sobrenome e CEP",
+        "Clicar em continue e Finish"        
+    ],
+    "Resultado_atual": "Pedido confirmado sem solicitação de pagamento",
+    "Resultado_esperado": "Sistema deve solicitar forma de pagamento antes de confirmar",
+    "Severidade": "Crítica"
+}
+print("=== BUG REPORT ===")
+print("Titulo", bug["titulo"])
+print("Severidade", bug["Severidade"])
+print("Resultado atual", bug["Resultado_atual"])
+print("Resultado esperado", bug["Resultado_esperado"])
+
+bug2 = {
+    "titulo": "Compra finaliza sem solicitar endereço",
+    "passos": [
+        "Acessar saucedemo.com e fazer login",
+        "Adicionar produto ao carrinho",
+        "Preencher nome, sobrenome e CEP",
+        "Clicar em continue e Finish"
+    ],
+    "Resultado_atual": "pedido confirmado sem solicitação de endereço",
+    "Resultado_esperado": "O sistema deve solicitar o enedere como CEP, rua e numero da residência do cliente antes de confirmar",
+    "Severidade": "Alta"
+}
+print("=== BUG REPORT2 ===")
+print("titulo", bug2["titulo"])
+print("Severidade", bug2["Severidade"])
+print("Resultado atual", bug2["Resultado_atual"])
+print("Resultado esperado", bug2["Resultado_esperado"])
+
+bug3 = {
+    "titulo": "A compra é finalizada sem prazo de entrega",
+    "passos": [
+        "Acessar saucedemo.com e fazer login",
+        "adicionar produto escolhido ao carrinho",
+        "preencher nome, sobrenome e CEP",
+        "Clicar em continue e finish"
+    ],
+    "Resultado_atual": "Compra finalizada sem pedir ou informar prazo de entrega",
+    "Resultado_esperado": "Antes da confirmação da compra, o sistema deve exibir o prazo estimado de entrega e permitir que o cliente escolha uma data disponível para receber o produto.",
+    "Severidade": "Baixa"
+}
+print("=== BUG REPORT3 ===")
+print("titulo", bug3["titulo"])
+print("Severidade", bug3["Severidade"])
+print("Resultado atual", bug3["Resultado_atual"])
+print("Resultado esperado", bug3["Resultado_esperado"])
+```
