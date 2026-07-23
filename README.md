@@ -45,7 +45,7 @@ CT003
 ```python
 
 
-ug = {
+Bug = {
     "titulo": "Checkout finaliza sem solicitar forma de pagamento",
     "passos": [
         "Acessar saucedemo.com e fazer login",
