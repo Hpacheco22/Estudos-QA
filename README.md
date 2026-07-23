@@ -45,23 +45,27 @@ CT003
 ```python
 
 
-bug = {
+ug = {
     "titulo": "Checkout finaliza sem solicitar forma de pagamento",
     "passos": [
-        "Acessar saucedemo.com fazer login",
+        "Acessar saucedemo.com e fazer login",
         "Adicionar produto ao carrinho",
         "Preencher nome, sobrenome e CEP",
-        "Clicar em continue e Finish"        
+        "Clicar em continue e Finish"
     ],
     "Resultado_atual": "Pedido confirmado sem solicitação de pagamento",
     "Resultado_esperado": "Sistema deve solicitar forma de pagamento antes de confirmar",
     "Severidade": "Crítica"
 }
+
 print("=== BUG REPORT ===")
 print("Titulo", bug["titulo"])
 print("Severidade", bug["Severidade"])
 print("Resultado atual", bug["Resultado_atual"])
 print("Resultado esperado", bug["Resultado_esperado"])
+print("Passos:")
+for passo in bug["passos"]:
+    print("-", passo)
 
 bug2 = {
     "titulo": "Compra finaliza sem solicitar endereço",
@@ -80,6 +84,11 @@ print("titulo", bug2["titulo"])
 print("Severidade", bug2["Severidade"])
 print("Resultado atual", bug2["Resultado_atual"])
 print("Resultado esperado", bug2["Resultado_esperado"])
+print("passos:")
+
+for passo in bug2["passos"]:
+    print("-", passo)
+
 
 bug3 = {
     "titulo": "A compra é finalizada sem prazo de entrega",
@@ -98,4 +107,11 @@ print("titulo", bug3["titulo"])
 print("Severidade", bug3["Severidade"])
 print("Resultado atual", bug3["Resultado_atual"])
 print("Resultado esperado", bug3["Resultado_esperado"])
-```
+print("passos:")
+
+for passo in bug3["passos"]:
+    print("-", passo)
+'''
+
+
+'
