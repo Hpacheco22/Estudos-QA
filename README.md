@@ -114,4 +114,3 @@ for passo in bug3["passos"]:
 '''
 
 
-'
